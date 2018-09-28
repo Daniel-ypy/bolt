@@ -59,5 +59,7 @@ typings/
 
 /.idea
 /dist
+/front-end/.idea
+/front-end/dist
 package-lock.json
 

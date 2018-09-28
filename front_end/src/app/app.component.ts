@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GenerateChart } from '../service/d3/generate.chart'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  ngAfterContentInit() {
+    GenerateChart.creatRaindrop("testBand1");
+  }
 }

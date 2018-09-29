@@ -1,0 +1,17 @@
+<div class="modal">
+    <mat-icon class="close-icon" (click)="close()">
+        close
+    </mat-icon>
+
+    <mat-icon class="main-icon error">error_outline</mat-icon>
+
+    <div class="error-detail" *ngIf="!!errorResponse">
+        <div>
+            {{errorResponse.message}}
+        </div>
+    </div>
+
+    <ig-button (trigger)="close()">
+        Ok
+    </ig-button>
+</div>

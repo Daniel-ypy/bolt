@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GenerateChart } from '../service/d3/generate.chart'
+import { GenerateChart } from '../../service/d3/generate.chart'
 
 @Component({
   selector: 'app-root',

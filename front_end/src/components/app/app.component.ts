@@ -75,14 +75,14 @@ export class AppComponent {
         return color(Math.floor(random) )
       })
       .on("mouseover",function(d,i){
-        let tooltip=d3.select(".tooltip");
+        let tooltip=d3.select("#tooltip");
         tooltip.html( "时间"+d.time+"<br />费率"+d.rate + "<br />测试"  + d.angle + "")
         .style("left", (d3.event.pageX) + "px")
         .style("top", (d3.event.pageY + 20) + "px")
         .style("opacity",1.0);
     })
   .on("mouseout",function(d,i){
-      let tooltip=d3.select(".tooltip");
+      let tooltip=d3.select("#tooltip");
       tooltip.style("opacity",0.0);
   });
       function raindrop(size) {
